@@ -36,3 +36,22 @@
         get { Curso = value;}
     }
  }
+ public class Funcionario : Pessoa{
+    privatedouble salario;
+    
+    //Método para calcular o bônus
+    public double Bonus(){
+        return salario * 0.1;// 10% de bônus padrão sobre o salario
+    }
+
+    //Construtor da classe Estudante
+    public Funcionario(string nome, int idade, string cpf, double salario) : base(nome, idade, cpf) {
+        salario = salario;
+    }
+
+    //Propriedades da classe Estudante que opermite acesso controla a um campo privado
+    public string Salario {
+        get {return salario; }
+        set { salario = value; }
+    }
+}
