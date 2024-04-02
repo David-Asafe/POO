@@ -22,3 +22,17 @@
         set {cpf = value;}
     }
  }
+ public classEstudante: Pessoa {
+    private String curso;
+
+    //construtor da classe Estudante
+    public Estudante(string nome, int idade, string cpf, string curso): base(nome, idade, cpf) {
+        Curso = curso
+    }
+
+    //Propriedade da classe estudante que permite acessp controlado a um campo privado
+    public String Curso{
+        get { return curso;}
+        get { Curso = value;}
+    }
+ }
