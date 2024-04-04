@@ -22,7 +22,7 @@
         set {cpf = value;}
     }
  }
- public classEstudante: Pessoa {
+    public class Estudante: Pessoa {
     private String curso;
 
     //construtor da classe Estudante
@@ -33,7 +33,7 @@
     //Propriedade da classe estudante que permite acessp controlado a um campo privado
     public String Curso{
         get { return curso;}
-        get { Curso = value;}
+        set { Curso = value;}
     }
  }
  public class Funcionario : Pessoa{
@@ -49,7 +49,7 @@
         salario = salario;
     }
 
-    //Propriedades da classe Estudante que opermite acesso controla a um campo privado
+    //Propriedades da classe Estudante que o permite acesso controla a um campo privado
     public string Salario {
         get {return salario; }
         set { salario = value; }
