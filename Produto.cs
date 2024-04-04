@@ -31,7 +31,7 @@ public class ConsoleGame: Produto {
     private string capacidadeArmazanamento;
 
    
-    public Produto(string nome, decimal preco, string descricao, string categoria, int capacidadeArmazanamento): base(nome, preco, descricao, categoria) {
+    public ConsoleGame(string nome, decimal preco, string descricao, string categoria, int capacidadeArmazanamento): base(nome, preco, descricao, categoria) {
         CapacidadeArmazanamento = capacidadeArmazanamento
     }
      public int capacidadeArmazanamento{
@@ -43,7 +43,7 @@ public class Jogo: Produto {
     private string genero;
 
    
-    public Produto(string nome, decimal preco, string descricao, string categoria): base(nome, preco, descricao, categoria) {
+    public Jogo(string nome, decimal preco, string descricao, string categoria, string genero): base(nome, preco, descricao, categoria) {
         Genero = genero
     }
      public string Genero{
@@ -55,7 +55,7 @@ public class Acessorio: Produto {
     private string Tipo;
 
    
-    public Produto(string nome, decimal preco, string descricao, string Tipo): base(nome, preco, descricao, categoria, tipo) {
+    public Acessorio(string nome, decimal preco, string descricao, string atipo): base(nome, preco, descricao, categoria, tipo) {
         Tipo = tipo
     }
      public string Tipo{
@@ -64,7 +64,7 @@ public class Acessorio: Produto {
     }
 }
 public class Colecionavel: Produto {
-    private string EdicaoLimitada;
+    private bool EdicaoLimitada;
 
    
     public EdicaoLimitada(string nome, decimal preco, string descricao, string EdicaoLimitada): base(nome, preco, descricao, categoria, edicaoLimitada) {
@@ -85,7 +85,7 @@ public class Program {
 
         Acessorio acessorio = new Acessorio("Samsung Smart Tv 85 Neo Qled 8k, 292 polegadas", 1.000, "Mini Led | Painel 120hz | Processador com IA | 85", "Periféricos");
 
-        Acessorio acessorio = new Acessorio("Mesa Gamer Cougar E-Mars 150", 300, "Ajuste de Altura Elétrico, Construção Elevada e Robusta, Treinamento sem Tensão, Capacidade Máxima de Elevação: 100KG, Freio de Segurança Automático para Colisão Emergente", "Perifericos", true);
+        Colecionavel colecionavel = new Colecionavel("Controle Ps4 com Grip Modern Warfare Limited Gold Stelf", 100,00, "CUSTOMIZAÇÃO STELF NO CONTROLE PS4 ORIGINAL", "Modern Warfare Limited", true);
         
     }
 }
