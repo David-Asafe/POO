@@ -55,7 +55,7 @@ public class Acessorio: Produto {
     private string Tipo;
 
    
-    public Acessorio(string nome, decimal preco, string descricao, string atipo): base(nome, preco, descricao, categoria, tipo) {
+    public Acessorio(string nome, decimal preco, string descricao, string tipo): base(nome, preco, descricao, categoria, tipo) {
         Tipo = tipo
     }
      public string Tipo{
