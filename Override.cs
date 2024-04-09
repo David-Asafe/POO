@@ -76,10 +76,13 @@ public class Program {
     public static void main (string[] args) {
         Personagem personagem;
         Soldado soldado = new Soldado("Militar", 90, "Adrenalina", "Tiro de M4");
+        Soldado.Atacar();
 
         Sniper sniper = new Sniper("Militar", 65, "Tiro extremamente preciso", "Usp");
+        Sniper.Atacar();
 
         Medico medico = new Medico("Militar", 80, "Cura rápida", "Ajudar");
+        Medico.Atacar();
         
     }
 }
