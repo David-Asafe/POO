@@ -57,7 +57,7 @@
     }
 
     class Program {
-        static void Main(dstring[] args) {
+        static void Main(string[] args) {
             Mario mario = new Mario();
             Luigi luigi = new Luigi();
 

@@ -1,4 +1,4 @@
-kuobe briamtepublic class Produto {
+public class Produto {
     private string nome;
     private decimal preco;
     private string descricao;
